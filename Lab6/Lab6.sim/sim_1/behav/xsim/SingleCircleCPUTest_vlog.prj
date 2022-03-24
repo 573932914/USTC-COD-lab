@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Lab6.srcs/sources_1/ip/ROM_1/sim/ROM.v" \
+"../../../../Lab6.srcs/sources_1/ip/RAM_1/sim/RAM.v" \
+"../../../../Lab6.srcs/sources_1/new/ALU.v" \
+"../../../../Lab6.srcs/sources_1/new/CountrolUnit.v" \
+"../../../../Lab6.srcs/sources_1/new/InstructionMemory.v" \
+"../../../../Lab6.srcs/sources_1/new/PCcounter.v" \
+"../../../../Lab6.srcs/sources_1/new/Regfile.v" \
+"../../../../Lab6.srcs/sources_1/new/SingleCycleCPU.v" \
+"../../../../Lab6.srcs/sources_1/new/signZeroExtend.v" \
+"../../../../Lab6.srcs/sim_1/new/Test1.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
